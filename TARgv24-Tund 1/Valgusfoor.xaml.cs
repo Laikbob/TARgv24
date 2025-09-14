@@ -59,22 +59,10 @@ public partial class Valgusfoor : ContentPage
         foreach (var c in circles)
             c.BackgroundColor = inactiveColor;
 
-        // ✅ Включаем выбранный цвет
+        // Включаем выбранный цвет
         circles[idx].BackgroundColor = activeColors[idx];
         statusLabel.Text = messages[idx];
 
-    }
-
-    private async Task AnimateCircle(Frame circle)
-    {
-        await Task.WhenAll(
-            circle.ScaleTo(1.2, 150),
-            circle.FadeTo(0.5, 150)
-        );
-        await Task.WhenAll(
-            circle.ScaleTo(1.0, 150),
-            circle.FadeTo(1.0, 150)
-        );
     }
     private void butSisse_Clicked(object sender, EventArgs e)
     {
@@ -124,7 +112,7 @@ public partial class Valgusfoor : ContentPage
                     circles[1].BackgroundColor = on ? Colors.Yellow : inactiveColor;
                 });
                 on = !on;
-                await Task.Delay(700, token); // задержка 0.7 сек
+                await Task.Delay(700, token); // задержка
             }
         }, token);
     }
