@@ -92,7 +92,7 @@ public partial class Valgusfoor : ContentPage
 
         statusLabel.Text = "Öö režiim (vilgub kollane)";
 
-        // Останавливаем предыдущий режим, если он был
+        // Останавливаем предыдущий режим
         nightModeCts?.Cancel();
         nightModeCts = new CancellationTokenSource();
         var token = nightModeCts.Token;
