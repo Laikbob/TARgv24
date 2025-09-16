@@ -9,6 +9,7 @@ public partial class Valgusfoor : ContentPage
     readonly Color inactiveColor = Colors.Gray;
     readonly string[] messages = { "Seisa!", "Valmista!", "Sõida!" };
     
+    //список круг
     List<Frame> circles = new List<Frame>();
     bool isOn = false;
 

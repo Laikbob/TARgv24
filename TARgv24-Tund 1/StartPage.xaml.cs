@@ -2,8 +2,8 @@
 
 public partial class StartPage : ContentPage
 {
-    public List<ContentPage> lehed = new List<ContentPage>() { new TekstPage(), new FigurePage(), new TimerPage(), new Valgusfoor(), new DateTimePage() };
-    public List<string> tekstid = new List<string>() { "Tee lahti tekstiga", "Tee lahti Figure tekst", "Käivitada kella", "Valgusfoor", "Kella aeg" };
+    public List<ContentPage> lehed = new List<ContentPage>() { new TekstPage(), new FigurePage(), new TimerPage(), new Valgusfoor(), new DateTimePage(), new Lumememm()  };
+    public List<string> tekstid = new List<string>() { "Tee lahti tekstiga", "Tee lahti Figure tekst", "Käivitada kella", " 🚦Valgusfoor", " 🕰Kella aeg" , "⛄Lumememm" };
     ScrollView sv;
     VerticalStackLayout vsl;
 
@@ -25,7 +25,7 @@ public partial class StartPage : ContentPage
                 ClassId = i.ToString(), // Сохраняем индекс здесь
             };
 
-            nupp.Clicked += Nupp_Clicked;//
+            nupp.Clicked += Nupp_Clicked;
             vsl.Add(nupp);
         }
 
