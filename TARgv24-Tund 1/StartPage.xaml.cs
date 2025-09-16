@@ -25,7 +25,7 @@ public partial class StartPage : ContentPage
                 ClassId = i.ToString(), // Сохраняем индекс здесь
             };
 
-            nupp.Clicked += Nupp_Clicked;
+            nupp.Clicked += Nupp_Clicked;//
             vsl.Add(nupp);
         }
 
