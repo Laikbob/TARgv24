@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TARgv24_Tund_1.Valgusfoor"
+             Title="Valgusfoor"
+             BackgroundImageSource="street.jpg">
+    <VerticalStackLayout>
+        <Label 
+       x:Name="statusLabel"
+       Text="Vali valgus"
+       FontSize="20"
+       HorizontalOptions="Center"
+       TextColor="Black"
+       FontAttributes="Bold"/>
+        
+        
+        <!--Место где будет создоваться круги-->
+        <VerticalStackLayout x:Name="lightContainer" 
+                 HorizontalOptions="Center"
+                 Spacing="15">
+        </VerticalStackLayout>
+
+        <!-- Кнопки -->
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Spacing="20">
+
+            <Button
+                x:Name="buSisse"
+                Text="Sisse"
+                Clicked="butSisse_Clicked"
+                WidthRequest="100"/>
+            <Button
+                x:Name="buVälja"
+                Text="Välja"
+                Clicked="butVälja_Clicked"
+                WidthRequest="100"/>
+            
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="15">
+            <Button x:Name="buÖö" Text="Öörežiim" Clicked="butÖö_Clicked" WidthRequest="120"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
