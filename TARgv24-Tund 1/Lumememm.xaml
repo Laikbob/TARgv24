@@ -31,11 +31,13 @@
                     Text="Muuda värvi"
                     WidthRequest="120"
                     Clicked="buVärv_Clicked"/>
-            <Button x:Name="buTantsi"
-                    Text="Tantsi"
-                    WidthRequest="100"
-                    Clicked="buTantsi_Clicked"/>
         </HorizontalStackLayout>
+        <VerticalStackLayout>
+            <Button x:Name="buTantsi"
+        Text="Tantsi"
+        WidthRequest="100"
+        Clicked="buTantsi_Clicked"/>
+        </VerticalStackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

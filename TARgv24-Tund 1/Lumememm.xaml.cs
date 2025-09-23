@@ -30,20 +30,20 @@ public partial class Lumememm : ContentPage
         {
             WidthRequest = 12,  
             HeightRequest = 12,
-            CornerRadius = 6,  
+            CornerRadius = 16,  
             BackgroundColor = Colors.Black
         };
-        AbsoluteLayout.SetLayoutBounds(eyes1, new Rect(0.488, 0.23, 12, 12));  
+        AbsoluteLayout.SetLayoutBounds(eyes1, new Rect(0.46, 0.23, 12, 12));  
         AbsoluteLayout.SetLayoutFlags(eyes1, AbsoluteLayoutFlags.PositionProportional);
 
         eyes2 = new Frame
         {
             WidthRequest = 12,
             HeightRequest = 12,
-            CornerRadius = 6,
+            CornerRadius = 16,
             BackgroundColor = Colors.Black
         };
-        AbsoluteLayout.SetLayoutBounds(eyes2, new Rect(0.512, 0.23, 12, 12));  
+        AbsoluteLayout.SetLayoutBounds(eyes2, new Rect(0.54, 0.23, 12, 12));  
         AbsoluteLayout.SetLayoutFlags(eyes2, AbsoluteLayoutFlags.PositionProportional);
 
         head = new Frame
@@ -99,7 +99,7 @@ public partial class Lumememm : ContentPage
             BackgroundColor = Colors.Brown,
             Rotation = -30 
         };
-        AbsoluteLayout.SetLayoutBounds(leftHand, new Rect(0.45, 0.48, 60, 10));
+        AbsoluteLayout.SetLayoutBounds(leftHand, new Rect(0.3, 0.48, 60, 10));
         AbsoluteLayout.SetLayoutFlags(leftHand, AbsoluteLayoutFlags.PositionProportional);
 
         rightHand = new Frame
@@ -110,7 +110,7 @@ public partial class Lumememm : ContentPage
             BackgroundColor = Colors.Brown,
             Rotation = 30
         };
-        AbsoluteLayout.SetLayoutBounds(rightHand, new Rect(0.55, 0.48, 60, 10));
+        AbsoluteLayout.SetLayoutBounds(rightHand, new Rect(0.7, 0.48, 60, 10));
         AbsoluteLayout.SetLayoutFlags(rightHand, AbsoluteLayoutFlags.PositionProportional);
 
 
@@ -146,14 +146,14 @@ public partial class Lumememm : ContentPage
     {
         // Поднять руки
         await Task.WhenAll(
-            leftHand.RotateTo(-80, 500),  // левая вверх
-            rightHand.RotateTo(80, 500)   // правая вверх
+            leftHand.RotateTo(80, 500),  // левая вверх
+            rightHand.RotateTo(-80, 500)   // правая вверх
         );
 
         // Опустить руки
         await Task.WhenAll(
-            leftHand.RotateTo(-30, 500),
-            rightHand.RotateTo(30, 500)
+            leftHand.RotateTo(30, 500),
+            rightHand.RotateTo(-30, 500)
         );
     } 
     
