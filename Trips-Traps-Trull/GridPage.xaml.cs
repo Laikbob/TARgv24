@@ -41,7 +41,6 @@ public partial class GridPage : ContentPage
         var box = (BoxView)sender;
         var r = Grid.GetRow(box);
         var v = Grid.GetColumn(box);
-        //DisplayAlert("Info", $"Rida {r + 1}, veerg {v + 1}", "OK");
         box.Color = Colors.DarkBlue;
     }
 }
