@@ -88,7 +88,7 @@ public partial class Lumememm : ContentPage
             CornerRadius = 15,      
          
         };
-        AbsoluteLayout.SetLayoutBounds(nose, new Rect(0.5, 0.33, 20, 30));  
+        AbsoluteLayout.SetLayoutBounds(nose, new Rect(0.5, 0.3, 20, 30));  
         AbsoluteLayout.SetLayoutFlags(nose, AbsoluteLayoutFlags.PositionProportional);
 
         leftHand = new Frame
