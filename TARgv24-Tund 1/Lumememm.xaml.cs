@@ -146,14 +146,14 @@ public partial class Lumememm : ContentPage
     {
         // Поднять руки
         await Task.WhenAll(
-            leftHand.RotateTo(80, 500),  // левая вверх
-            rightHand.RotateTo(-80, 500)   // правая вверх
+            leftHand.RotateTo(-80, 500),  
+            rightHand.RotateTo(80, 500)   
         );
 
         // Опустить руки
         await Task.WhenAll(
-            leftHand.RotateTo(30, 500),
-            rightHand.RotateTo(-30, 500)
+            leftHand.RotateTo(-30, 500),
+            rightHand.RotateTo(30, 500)
         );
     } 
     
