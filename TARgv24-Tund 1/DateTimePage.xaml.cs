@@ -15,7 +15,7 @@ public partial class DateTimePage : ContentPage
 		mis_on_valitud = new Label
 		{
 			Text = "Siin kuvatakse valitud kuupäev või kellaaeg",
-			FontSize = 20,
+			FontSize = 21,
 			TextColor = Colors.Red
 			
 		};
